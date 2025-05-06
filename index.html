@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Jogo 21</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>♣️ Blackjack ♥️</h1>
+
+    <div class="card-area">
+        <h2>Suas Cartas:</h2>
+        <div id="player-cards" class="cards-container"></div>
+        <h3>Total: <span id="player-total">0</span></h3>
+    </div>
+
+    <div class="card-area">
+        <h2>Cartas do PC:</h2>
+        <div id="pc-cards" class="cards-container"></div>
+        <h3>Total: <span id="pc-total">0</span></h3>
+    </div>
+    <div>
+        <button onclick="pedirCarta()">🂱 Pedir Carta</button>
+        <button onclick="parar()">🂴 Parar</button>
+    </div>
+
+    <h2 id="resultado"></h2>
+    <button id="reiniciar" onclick="reiniciarJogo()" style="display: none;">🃏 Reiniciar</button>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
